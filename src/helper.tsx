@@ -4,7 +4,13 @@ import type { RouteObject } from "react-router";
 import ColorExplorer from "./modules/ColorExplorer";
 import Authentication from "./modules/Authentication";
 import ContactForm from "./modules/ContactForm";
-// import CopyToClipboard from "./modules/CopyToClipboard";
+import CopyToClipboard from "./modules/CopyToClipboard";
+import AutoSaveText from "./modules/AutoSaveText";
+import Counter from "./modules/Counter";
+import ChipsInput from "./modules/ChipsInput";
+import LeapYear from "./modules/LeapYear";
+import PasswordStrength from "./modules/PasswordStrength";
+import Tooltip from "./modules/Tooltip";
 
 export const DATA: RouteObject[] = [
   {
@@ -19,10 +25,34 @@ export const DATA: RouteObject[] = [
     path: '/contact-form',
     element: <ContactForm />,
   },
-  // {
-  //   path: '/copy-to-clipboard',
-  //   element: <CopyToClipboard />,
-  // },
+  {
+    path: '/copy-to-clipboard',
+    element: <CopyToClipboard />,
+  },
+  {
+    path: '/auto-save-text',
+    element: <AutoSaveText />,
+  },
+  {
+    path: '/copy-to-clipboard',
+    element: <Counter />,
+  },
+  {
+    path: '/chips-input',
+    element: <ChipsInput />,
+  },
+  {
+    path: '/leap-year',
+    element: <LeapYear />,
+  },
+  {
+    path: '/password-strength',
+    element: <PasswordStrength />,
+  },
+  {
+    path: '/tooltip',
+    element: <Tooltip />,
+  },
 ];
 
 export const getTitle = (str: string) =>
