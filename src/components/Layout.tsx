@@ -10,13 +10,13 @@ const Layout = ({ title, children }: LayoutProps) => {
 
     return (
         <div className="w-full h-screen py-8">
-            <div className="flex items-center justify-center mb-8 px-8">
+            <div className="flex items-center my-4 mb-8">
                 {window && window.location.pathname !== '/' && (
-                    <button type="button" onClick={() => navigate('/')} className="mr-8 border rounded-sm px-2">
+                    <button type="button" onClick={() => navigate('/')} className="border rounded-sm px-2">
                         <MoveLeftIcon />
                     </button>
                 )}
-                <span className="text-xl md:text-3xl font-bold text-center">
+                <span className="text-xl md:text-3xl font-bold text-center ml-8">
                     {title ?? 'Machine Coding Question'}
                 </span>
             </div>
