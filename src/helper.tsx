@@ -19,10 +19,10 @@ export const DATA: RouteObject[] = [
     path: '/contact-form',
     element: <ContactForm />,
   },
-  {
-    path: '/copy-to-clipboard',
-    element: <CopyToClipboard />,
-  },
+  // {
+  //   path: '/copy-to-clipboard',
+  //   element: <CopyToClipboard />,
+  // },
 ];
 
 export const getTitle = (str: string) =>
