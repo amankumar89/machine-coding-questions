@@ -10,7 +10,7 @@ const Layout = ({ title, children }: LayoutProps) => {
 
     return (
         <div className="w-full h-screen py-8">
-            <div className="my-4 mb-8">
+            <div className="flex items-center my-4 mb-8">
                 {window && window.location.pathname !== '/' && (
                     <button type="button" onClick={() => navigate('/')} className="border rounded-sm px-2">
                         <MoveLeftIcon />
